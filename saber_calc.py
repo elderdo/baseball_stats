@@ -69,7 +69,7 @@ class SaberCalc:
         raw_fip = ((13 * hr) + (3 * (bb + hbp)) - (2 * k)) / decimal_ip
         return round(raw_fip + self.FIP_CONSTANT, 2)
 
-    def fetch_hitter_stats(self, player_id):
+    def     fetch_hitter_stats(self, player_id):
         """Subroutine: Fetches hitting data using dynamic URL."""
         url = self._get_api_path(player_id, "hitting")
         try:
