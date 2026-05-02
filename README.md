@@ -4,7 +4,7 @@ A Python-based utility designed to calculate and store advanced MLB statistics (
 
 ## Features
 
-* Live Data Integration: Fetches season totals directly from [mlb.com](https://mlb.com).
+* Live Data Integration: Fetches season totals directly from [mlb.com](https://statsapi.mlb.com).
 * Advanced Offensive Metrics: Calculates Weighted On-Base Average (wOBA) and Weighted Runs Created Plus (wRC+).
 * Advanced Pitching Metrics: Calculates Fielding Independent Pitching (FIP) with proper inning-pitched decimal conversion.
 * SQLite Persistence: Automatically manages a local database (baseball_stats.db) to store results.
