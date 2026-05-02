@@ -17,7 +17,7 @@ class SaberCalc:
     BASE_URL = "https://statsapi.mlb.com"
     API_VER = "v1"
 
-    def __init__(self, db_name="baseball_stats.db", base_url=None, api_ver=None):
+    def __init__(self, db_name="data/baseball_stats.db", base_url=None, api_ver=None):
         """Constructor: Initializes logging, DB, and API settings."""
         self._setup_logging()
         self.conn = sqlite3.connect(db_name)
@@ -32,7 +32,7 @@ class SaberCalc:
             level=logging.INFO,
             format='%(asctime)s - %(levelname)s - %(message)s',
             handlers=[
-                logging.FileHandler("saber_calc.log"),
+                logging.FileHandler("logs/saber_calc.log"),
                 logging.StreamHandler(sys.stdout)
             ]
         )

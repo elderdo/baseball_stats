@@ -1,8 +1,14 @@
 import csv
 import time
+import sys
+import os
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 from saber_calc import SaberCalc
 
-def run_csv_test(filename="players_to_test.csv"):
+
+def run_csv_test(filename=None):
+    if filename is None:
+        filename = os.path.join(os.path.dirname(os.path.dirname(__file__)), "data", "players_to_test.csv")
     calc = SaberCalc()
 
     print(f"{'PLAYER':<20} | {'TYPE':<8} | {'RESULT':<15} | {'STATUS'}")
