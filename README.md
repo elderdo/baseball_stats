@@ -13,14 +13,14 @@ A Python-based utility designed to calculate and store advanced MLB statistics (
 
 ## Installation
 
-   1. Clone the repository:
+1. Clone the repository:
 
-   ```bash
-   git clone https://github.com/yourusername/baseball_stats.git
-   cd baseball_stats
-   ```
-   
-   2. Install dependencies:
+    ```bash
+    git clone https://github.com/yourusername/baseball_stats.git
+    cd baseball_stats
+    ```
+
+2. Install dependencies:
 
    ```bash
    pip install requests
